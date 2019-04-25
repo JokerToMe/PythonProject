@@ -52,9 +52,13 @@ path = r'D:\ShineLaw\PythonProject\shine\file1.txt'
 # f.close()
 
 # 一个完整的过程
-try:
-    f = open(path,'r',encoding='utf-8')
+# try:
+#     f = open(path,'r',encoding='utf-8')
+#     print(f.read())
+# finally:
+#     if f:
+#         f.close()
+
+# 最简单的写法
+with open(path,'r',encoding='utf-8') as f:
     print(f.read())
-finally:
-    if f:
-        f.close()
