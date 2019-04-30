@@ -43,7 +43,7 @@ def func5(*args):
     for arg in args:
         print(arg)
 
-func5('shine','law')
+func5('shine','test')
 
 def sum(*attr):
     sum = ''

@@ -3,7 +3,7 @@ path = r'D:\ShineLaw\PythonProject\shine\file3.txt'
 
 # 以二进制的形式写文件
 with open(path,'wb') as f:
-    f.write('shine law'.encode('utf-8'))
+    f.write('shine test'.encode('utf-8'))
 
 # 以二进制的形式读文件
 with open(path,'rb') as f:

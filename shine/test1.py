@@ -51,7 +51,7 @@ def func2(arg):
     print('%s is a gentleman' % arg)
 
 f = outer5(func2)
-f('law')
+f('test')
 
 # 再次变形，可以装饰任意函数的万能装饰器
 def outerCommon(func):
@@ -62,7 +62,7 @@ def outerCommon(func):
     return inner
 
 f = outerCommon(func2)
-f('law')
+f('test')
 
 # 调用变形
 @outerCommon
