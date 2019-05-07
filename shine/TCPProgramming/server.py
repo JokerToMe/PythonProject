@@ -12,6 +12,9 @@ print('服务器启动成功')
 # 等待连接
 clientSocket,clientAddress = s.accept()
 
+# accept返回的socket是和服务器连接成功而生成的一个用于相互传输数据的新的socket，有多少个客户端连接，就生成多少个socket，address为连接成功的客户端的地址（ip地址和端口号）
+# tcp协议由于已经建立了连接，所以采用send和recv方法发送和接收数据
+
 print('%s --- %s连接成功' % (clientSocket,clientAddress))
 
 while True:
